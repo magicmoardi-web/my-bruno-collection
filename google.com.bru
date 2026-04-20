@@ -6,10 +6,22 @@ meta {
 
 get {
   url: google.com
-  body: none
+  body: json
   auth: inherit
+}
+
+headers {
+  Authorization: Bearer Hessam
+  API_KEY: Farzad
+}
+
+body:json {
+  {
+    "test": "test"
+  }
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }
